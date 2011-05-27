@@ -10,6 +10,11 @@
 		8DD76F9A0486AA7600D96B5E /* objc-logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* objc-logger.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* objc-logger.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* objc-logger.1 */; };
+		EE25B6A5136AFED5004F7D14 /* Logged.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6A4136AFED5004F7D14 /* Logged.m */; };
+		EE25B6BD136B01A9004F7D14 /* OGLoggedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6BC136B01A9004F7D14 /* OGLoggedObject.m */; };
+		EE25B6C0136B01EE004F7D14 /* LoggedInherited.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6BF136B01EE004F7D14 /* LoggedInherited.m */; };
+		EE25B6F8136B04DF004F7D14 /* LoggedWithAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6F7136B04DF004F7D14 /* LoggedWithAddition.m */; };
+		EE25B6FB136B0546004F7D14 /* LoggedWithAddition+OGLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6FA136B0546004F7D14 /* LoggedWithAddition+OGLogger.m */; };
 		EEA52286135F5B830037492E /* OGLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5227F135F5B830037492E /* OGLogger.m */; };
 		EEA52287135F5B830037492E /* OGLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA52281135F5B830037492E /* OGLoggerManager.m */; };
 		EEA52288135F5B830037492E /* OGLoggerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA52283135F5B830037492E /* OGLoggerOutput.m */; };
@@ -36,6 +41,16 @@
 		32A70AAB03705E1F00C91783 /* objc-logger_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-logger_Prefix.pch"; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* objc-logger */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "objc-logger"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* objc-logger.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "objc-logger.1"; sourceTree = "<group>"; };
+		EE25B6A3136AFED5004F7D14 /* Logged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logged.h; sourceTree = "<group>"; };
+		EE25B6A4136AFED5004F7D14 /* Logged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logged.m; sourceTree = "<group>"; };
+		EE25B6BB136B01A9004F7D14 /* OGLoggedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLoggedObject.h; sourceTree = "<group>"; };
+		EE25B6BC136B01A9004F7D14 /* OGLoggedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLoggedObject.m; sourceTree = "<group>"; };
+		EE25B6BE136B01EE004F7D14 /* LoggedInherited.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedInherited.h; sourceTree = "<group>"; };
+		EE25B6BF136B01EE004F7D14 /* LoggedInherited.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedInherited.m; sourceTree = "<group>"; };
+		EE25B6F6136B04DF004F7D14 /* LoggedWithAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggedWithAddition.h; sourceTree = "<group>"; };
+		EE25B6F7136B04DF004F7D14 /* LoggedWithAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggedWithAddition.m; sourceTree = "<group>"; };
+		EE25B6F9136B0546004F7D14 /* LoggedWithAddition+OGLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LoggedWithAddition+OGLogger.h"; path = "Additions/LoggedWithAddition+OGLogger.h"; sourceTree = "<group>"; };
+		EE25B6FA136B0546004F7D14 /* LoggedWithAddition+OGLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LoggedWithAddition+OGLogger.m"; path = "Additions/LoggedWithAddition+OGLogger.m"; sourceTree = "<group>"; };
 		EEA5227E135F5B830037492E /* OGLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLogger.h; sourceTree = "<group>"; };
 		EEA5227F135F5B830037492E /* OGLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLogger.m; sourceTree = "<group>"; };
 		EEA52280135F5B830037492E /* OGLoggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLoggerManager.h; sourceTree = "<group>"; };
@@ -74,9 +89,16 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EE25B6F5136B049F004F7D14 /* Additions */,
 				EEA5227D135F5B830037492E /* OGLogger */,
 				32A70AAB03705E1F00C91783 /* objc-logger_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* objc-logger.m */,
+				EE25B6A3136AFED5004F7D14 /* Logged.h */,
+				EE25B6A4136AFED5004F7D14 /* Logged.m */,
+				EE25B6BE136B01EE004F7D14 /* LoggedInherited.h */,
+				EE25B6BF136B01EE004F7D14 /* LoggedInherited.m */,
+				EE25B6F6136B04DF004F7D14 /* LoggedWithAddition.h */,
+				EE25B6F7136B04DF004F7D14 /* LoggedWithAddition.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -105,6 +127,15 @@
 			name = Documentation;
 			sourceTree = "<group>";
 		};
+		EE25B6F5136B049F004F7D14 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				EE25B6F9136B0546004F7D14 /* LoggedWithAddition+OGLogger.h */,
+				EE25B6FA136B0546004F7D14 /* LoggedWithAddition+OGLogger.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
 		EEA5227D135F5B830037492E /* OGLogger */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +149,8 @@
 				EEA52285135F5B830037492E /* OGLoggerOutputConsole.m */,
 				EEA5229D135F5D840037492E /* OGLoggerOutputFile.h */,
 				EEA5229E135F5D840037492E /* OGLoggerOutputFile.m */,
+				EE25B6BB136B01A9004F7D14 /* OGLoggedObject.h */,
+				EE25B6BC136B01A9004F7D14 /* OGLoggedObject.m */,
 			);
 			path = OGLogger;
 			sourceTree = "<group>";
@@ -181,6 +214,11 @@
 				EEA52288135F5B830037492E /* OGLoggerOutput.m in Sources */,
 				EEA52289135F5B830037492E /* OGLoggerOutputConsole.m in Sources */,
 				EEA5229F135F5D840037492E /* OGLoggerOutputFile.m in Sources */,
+				EE25B6A5136AFED5004F7D14 /* Logged.m in Sources */,
+				EE25B6BD136B01A9004F7D14 /* OGLoggedObject.m in Sources */,
+				EE25B6C0136B01EE004F7D14 /* LoggedInherited.m in Sources */,
+				EE25B6F8136B04DF004F7D14 /* LoggedWithAddition.m in Sources */,
+				EE25B6FB136B0546004F7D14 /* LoggedWithAddition+OGLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,9 @@
 #import <Foundation/Foundation.h>
 #import "OGLoggerManager.h"
+#import "LoggedInherited.h"
+#import "LoggedWithAddition.h"
+#import "Logged.h"
+#include <asl.h>  
 
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
@@ -38,6 +42,25 @@ int main (int argc, const char * argv[]) {
     [[OGLoggerManager file] infoWithFormat:@"Info Message %i",2];
     [[OGLoggerManager file] debug:@"Debug Message"];
     [[OGLoggerManager file] debugWithFormat:@"Debug Message %i",2];
+	
+	
+	[[OGLoggerManager console] error:[OGLogger autoDescribe:[OGLoggerManager console]]];
+	
+	
+	Logged * logged = [[Logged alloc]init];
+	[logged methodOne];
+	[logged methodTwo];
+	[logged release];
+	
+	LoggedInherited * logged2 = [[LoggedInherited alloc]init];
+	[logged2 methodOne];
+	[logged2 methodTwo];
+	[logged2 release];
+	
+	LoggedWithAddition * logged3 = [[LoggedWithAddition alloc]init];
+	[logged3 methodOne];
+	[logged3 methodTwo];
+	[logged3 release];
 	
 	[pool drain];
     return 0;

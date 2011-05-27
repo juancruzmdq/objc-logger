@@ -24,6 +24,8 @@ typedef enum  {
 @property(assign) OGLogLevel level;
 @property(nonatomic,retain) OGLoggerOutput * output;
 
++ (NSString *) autoDescribe:(id)instance classType:(Class)classType;
++ (NSString *) autoDescribe:(id)instance;
 
 -(id)init;
 -(id)initInContext:(NSString *)_context;

@@ -8,7 +8,6 @@
 
 #import "OGLoggerOutput.h"
 
-
 @implementation OGLoggerOutput
 
 - (id)init
