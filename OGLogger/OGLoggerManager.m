@@ -13,6 +13,8 @@
 static OGLoggerManager * _sharedInstance = nil;
 static OGLogger * _sharedConsoleLogger = nil;
 static OGLogger * _sharedFileLogger = nil;
+static NSMutableDictionary * _loggers = nil;
+static NSDictionary * _loggersConfig = nil;
 
 @implementation OGLoggerManager
 
@@ -84,4 +86,59 @@ static OGLogger * _sharedFileLogger = nil;
 	
 }
 
++(OGLogger*)loggerForClassName:(NSString *)_className{
+
+	
+	if (!_loggers){
+		//if the instance doesn,t exist create it
+		_loggers = [[NSMutableDictionary alloc] init];
+	}
+
+	NSDictionary * conf =[OGLoggerManager loggersConfig];
+	
+	NSDictionary * confClass = [conf objectForKey:_className];
+	
+	if (confClass == nil) {
+		confClass = [conf objectForKey:@"default"];
+	}
+
+	OGLogger * loggerForClass = nil;
+	if (confClass == nil) {
+		loggerForClass = [OGLoggerManager console];
+	}else {
+		//busco en loggers si hay uno de esa clase
+		//sino lo creo
+		NSString * LoggerClass;
+		LoggerClass = [confClass objectForKey:@"OGLoggerClass"];
+		
+		loggerForClass = [_loggers objectForKey:LoggerClass];
+		
+		if (loggerForClass == nil) {
+			loggerForClass = [[[NSClassFromString(LoggerClass) alloc] init] autorelease];
+			[_loggers setObject:loggerForClass forKey:LoggerClass];
+			
+			OGLoggerOutput * loggerOutputForClass = nil;
+			NSString * LoggerOutputClass = nil;
+			LoggerOutputClass = [confClass objectForKey:@"OGLoggerOutputClass"];
+			loggerOutputForClass = [[[NSClassFromString(LoggerOutputClass) alloc] init] autorelease];
+			[loggerForClass setOutput:loggerOutputForClass];
+			[loggerForClass setContext:[confClass objectForKey:@"OGLoggerOutputContext"]];
+		}
+		
+	}
+	
+	return loggerForClass;
+}
+
++(NSDictionary*) loggersConfig{
+	return _loggersConfig;
+}
++(void) setLoggersConfig:(NSDictionary*)_dic{
+
+	if (_loggersConfig != nil){
+		[_loggersConfig release];
+	}
+	_loggersConfig = [_dic retain];
+
+}
 @end

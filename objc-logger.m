@@ -7,6 +7,21 @@
 
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+	
+	
+	[OGLoggerManager setLoggersConfig:[NSDictionary dictionaryWithObjectsAndKeys:
+										[NSDictionary dictionaryWithObjectsAndKeys:
+										 @"OGLogger",@"OGLoggerClass",
+										 @"OGLoggerOutputConsole",@"OGLoggerOutputClass",
+										 @"DINAMICO CONSOLA",@"OGLoggerOutputContext",nil],
+										@"Logged",
+										[NSDictionary dictionaryWithObjectsAndKeys:
+										 @"OGLogger",@"OGLoggerClass",
+										 @"OGLoggerOutputFile",@"OGLoggerOutputClass",
+										 @"DINAMICO ARCHIVO",@"OGLoggerOutputContext",nil],
+										@"LoggedInherited",
+										nil]
+	  ];
 
 	[[OGLoggerManager console] setContext:@"TESTING DEBUG LEVEL"];
     [[OGLoggerManager console] setLevel:OGLogLevelDebug];

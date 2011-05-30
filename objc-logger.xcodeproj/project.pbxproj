@@ -61,6 +61,7 @@
 		EEA52285135F5B830037492E /* OGLoggerOutputConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLoggerOutputConsole.m; sourceTree = "<group>"; };
 		EEA5229D135F5D840037492E /* OGLoggerOutputFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLoggerOutputFile.h; sourceTree = "<group>"; };
 		EEA5229E135F5D840037492E /* OGLoggerOutputFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGLoggerOutputFile.m; sourceTree = "<group>"; };
+		EEE57FF213904B3C00ED99BE /* OGLoggerConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OGLoggerConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 				EE25B6BF136B01EE004F7D14 /* LoggedInherited.m */,
 				EE25B6F6136B04DF004F7D14 /* LoggedWithAddition.h */,
 				EE25B6F7136B04DF004F7D14 /* LoggedWithAddition.m */,
+				EEE57FF213904B3C00ED99BE /* OGLoggerConfig.plist */,
 			);
 			name = Source;
 			sourceTree = "<group>";

@@ -16,5 +16,8 @@
 +(OGLoggerManager*)sharedInstance;
 +(OGLogger*)console;
 +(OGLogger*)file;
++(OGLogger*)loggerForClassName:(NSString *)_className;
 
++(NSDictionary*) loggersConfig;
++(void) setLoggersConfig:(NSDictionary*)_dic;
 @end

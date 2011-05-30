@@ -13,7 +13,7 @@
 @implementation Logged
 
 -(OGLogger *)logger{
-	return [OGLoggerManager console];
+	return [OGLoggerManager loggerForClassName:@"Logged"];
 }
 
 -(void)methodOne{
