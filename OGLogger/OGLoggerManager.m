@@ -123,6 +123,13 @@ static NSDictionary * _loggersConfig = nil;
 			loggerOutputForClass = [[[NSClassFromString(LoggerOutputClass) alloc] init] autorelease];
 			[loggerForClass setOutput:loggerOutputForClass];
 			[loggerForClass setContext:[confClass objectForKey:@"OGLoggerOutputContext"]];
+
+			NSString *loggerLevelForClass = [confClass objectForKey:@"OGLoggerLogLevel"];
+			if (loggerLevelForClass != nil)
+			{
+				NSArray *logLevelOrder = [NSArray arrayWithObjects: @"OGLogLevelError", @"OGLogLevelWarning", @"OGLogLevelInfo", @"OGLogLevelDebug", nil];
+				[loggerForClass setLevel:1 + [logLevelOrder indexOfObject:loggerLevelForClass]]; // add one because the array is 0-indexed but the enum is 1-indexed
+			}
 		}
 		
 	}
