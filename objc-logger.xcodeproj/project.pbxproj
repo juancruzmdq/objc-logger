@@ -10,6 +10,19 @@
 		8DD76F9A0486AA7600D96B5E /* objc-logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* objc-logger.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* objc-logger.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* objc-logger.1 */; };
+		EB30E3D213DBD9FD00418D25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		EB30E3D313DBDA1F00418D25 /* OGLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5227F135F5B830037492E /* OGLogger.m */; };
+		EB30E3D413DBDA1F00418D25 /* OGLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA52281135F5B830037492E /* OGLoggerManager.m */; };
+		EB30E3D513DBDA1F00418D25 /* OGLoggerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA52283135F5B830037492E /* OGLoggerOutput.m */; };
+		EB30E3D613DBDA1F00418D25 /* OGLoggerOutputConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA52285135F5B830037492E /* OGLoggerOutputConsole.m */; };
+		EB30E3D713DBDA1F00418D25 /* OGLoggerOutputFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA5229E135F5D840037492E /* OGLoggerOutputFile.m */; };
+		EB30E3D813DBDA1F00418D25 /* OGLoggedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6BC136B01A9004F7D14 /* OGLoggedObject.m */; };
+		EB30E3F813DBDACE00418D25 /* OGLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA5227E135F5B830037492E /* OGLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB30E3F913DBDACE00418D25 /* OGLoggerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA52280135F5B830037492E /* OGLoggerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB30E3FA13DBDACE00418D25 /* OGLoggerOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA52282135F5B830037492E /* OGLoggerOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB30E3FB13DBDACE00418D25 /* OGLoggerOutputConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA52284135F5B830037492E /* OGLoggerOutputConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB30E3FC13DBDACE00418D25 /* OGLoggerOutputFile.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA5229D135F5D840037492E /* OGLoggerOutputFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB30E3FD13DBDACE00418D25 /* OGLoggedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EE25B6BB136B01A9004F7D14 /* OGLoggedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE25B6A5136AFED5004F7D14 /* Logged.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6A4136AFED5004F7D14 /* Logged.m */; };
 		EE25B6BD136B01A9004F7D14 /* OGLoggedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6BC136B01A9004F7D14 /* OGLoggedObject.m */; };
 		EE25B6C0136B01EE004F7D14 /* LoggedInherited.m in Sources */ = {isa = PBXBuildFile; fileRef = EE25B6BF136B01EE004F7D14 /* LoggedInherited.m */; };
@@ -41,6 +54,8 @@
 		32A70AAB03705E1F00C91783 /* objc-logger_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-logger_Prefix.pch"; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* objc-logger */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "objc-logger"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* objc-logger.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "objc-logger.1"; sourceTree = "<group>"; };
+		EB30E3CC13DBD9CA00418D25 /* OGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB30E3CD13DBD9CA00418D25 /* OGLogger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OGLogger-Info.plist"; sourceTree = "<group>"; };
 		EE25B6A3136AFED5004F7D14 /* Logged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logged.h; sourceTree = "<group>"; };
 		EE25B6A4136AFED5004F7D14 /* Logged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logged.m; sourceTree = "<group>"; };
 		EE25B6BB136B01A9004F7D14 /* OGLoggedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLoggedObject.h; sourceTree = "<group>"; };
@@ -73,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB30E3CA13DBD9CA00418D25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30E3D213DBD9FD00418D25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +106,7 @@
 				C6859EA2029092E104C91782 /* Documentation */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
+				EB30E3CD13DBD9CA00418D25 /* OGLogger-Info.plist */,
 			);
 			name = "objc-logger";
 			sourceTree = "<group>";
@@ -117,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD76FA10486AA7600D96B5E /* objc-logger */,
+				EB30E3CC13DBD9CA00418D25 /* OGLogger.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +184,22 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		EB30E3C713DBD9CA00418D25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30E3F813DBDACE00418D25 /* OGLogger.h in Headers */,
+				EB30E3F913DBDACE00418D25 /* OGLoggerManager.h in Headers */,
+				EB30E3FA13DBDACE00418D25 /* OGLoggerOutput.h in Headers */,
+				EB30E3FB13DBDACE00418D25 /* OGLoggerOutputConsole.h in Headers */,
+				EB30E3FC13DBDACE00418D25 /* OGLoggerOutputFile.h in Headers */,
+				EB30E3FD13DBDACE00418D25 /* OGLoggedObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		8DD76F960486AA7600D96B5E /* objc-logger */ = {
 			isa = PBXNativeTarget;
@@ -177,6 +218,23 @@
 			productName = "objc-logger";
 			productReference = 8DD76FA10486AA7600D96B5E /* objc-logger */;
 			productType = "com.apple.product-type.tool";
+		};
+		EB30E3CB13DBD9CA00418D25 /* OGLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB30E3D113DBD9CB00418D25 /* Build configuration list for PBXNativeTarget "OGLogger" */;
+			buildPhases = (
+				EB30E3C913DBD9CA00418D25 /* Sources */,
+				EB30E3CA13DBD9CA00418D25 /* Frameworks */,
+				EB30E3C713DBD9CA00418D25 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OGLogger;
+			productName = OGLogger;
+			productReference = EB30E3CC13DBD9CA00418D25 /* OGLogger.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				8DD76F960486AA7600D96B5E /* objc-logger */,
+				EB30E3CB13DBD9CA00418D25 /* OGLogger */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +280,19 @@
 				EE25B6C0136B01EE004F7D14 /* LoggedInherited.m in Sources */,
 				EE25B6F8136B04DF004F7D14 /* LoggedWithAddition.m in Sources */,
 				EE25B6FB136B0546004F7D14 /* LoggedWithAddition+OGLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB30E3C913DBD9CA00418D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB30E3D313DBDA1F00418D25 /* OGLogger.m in Sources */,
+				EB30E3D413DBDA1F00418D25 /* OGLoggerManager.m in Sources */,
+				EB30E3D513DBDA1F00418D25 /* OGLoggerOutput.m in Sources */,
+				EB30E3D613DBDA1F00418D25 /* OGLoggerOutputConsole.m in Sources */,
+				EB30E3D713DBDA1F00418D25 /* OGLoggerOutputFile.m in Sources */,
+				EB30E3D813DBDA1F00418D25 /* OGLoggedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +354,60 @@
 			};
 			name = Release;
 		};
+		EB30E3CF13DBD9CB00418D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "OGLogger-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OGLogger;
+			};
+			name = Debug;
+		};
+		EB30E3D013DBD9CB00418D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "OGLogger-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OGLogger;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -299,6 +425,15 @@
 			buildConfigurations = (
 				1DEB927908733DD40010E9CD /* Debug */,
 				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB30E3D113DBD9CB00418D25 /* Build configuration list for PBXNativeTarget "OGLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB30E3CF13DBD9CB00418D25 /* Debug */,
+				EB30E3D013DBD9CB00418D25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
